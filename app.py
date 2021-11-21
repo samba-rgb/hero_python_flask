@@ -140,13 +140,13 @@ def outbug():
     k = {'Mon':'monday','Tue':'tuesday','Wed':'wednessday','Thu':'thursday','Fri':'friday','Sat':'saturday','Sun':'sunday'}
     text = request.form["tablet"]
     pattern = request.form["pattern"]
-    print(text)
+    #print(text)
 
     final_dictionary = eval(text)
     l = final_dictionary['CONTACTDETAILS']
     patt_dic = eval(pattern)
     items = patt_dic['CONTACTDETAILS']
-    print(items)
+    #print(items)
     df = pd.DataFrame(columns=['ID','NAME', 'DATE', 'morning', 'afternoon',
        'evening', 'night'])
     for i in range(0,len(l)):
@@ -212,7 +212,7 @@ def debug():
     k = {'Mon':'monday','Tue':'tuesday','Wed':'wednessday','Thu':'thursday','Fri':'friday','Sat':'saturday','Sun':'sunday'}
     text = request.form["tablet"]
     pattern = request.form["pattern"]
-    print(text)
+    #print(text)
 
     final_dictionary = eval(text)
     l = final_dictionary['CONTACTDETAILS']
